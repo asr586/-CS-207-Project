@@ -19,12 +19,17 @@ My contribution is adding the ability of adding/removing IDs in the run-time usi
 * The program will never continue without a valid master and checker in the system.
 
 ## Materials Required
-1. Arduino UNO
-2. RFID MFRC522
-3. LCD 16x2
-4. Red, blue and white LEDs.
-5. Buzzer
-6. Two pushbuttons
+1. 1 x Breadboard
+2. 1 x Arduino Uno
+3. 1 x Soldering station
+4. 1 x RFID RC 522 Card reader Module
+5. 6 x Smart Card chip
+6. 1 x serial LCD module display
+7. 3 x 220 Ohm, 0.25W Carbon Film Resistor
+8. 2 x buttons
+9. 3 x LEDS (any three color you like)
+10. 1 x buzzer
+11. Jumpers Wires
 
 ## Schematic/project layouts
 Here is the logical connections schematic for the project:
