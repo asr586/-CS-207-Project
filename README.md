@@ -10,18 +10,18 @@ My contribution is adding the ability of adding/removing IDs in the run-time usi
 Usually the normal attendance system is time consuming and may contain many errors due to bad handwriting and so on, this is because it is taken on paper, but using an RFID tag to which every student has his own tag, will make things much easier and faster, and the ability to add/remove IDs in the run-time without going back to the code, is much more efficient as well. And with the hope of integrating the system with Wi-Fi and storing the IDs on a database instead of internal EEPROM, this is going to be amazing.
 
 ## General idea
-The general idea is to store the IDs on the internal EEPROM with a sequence, while at the same time store the *master* card, in a different location, this master card will allow for adding/removing IDs.
-The EEPROM consists of 1024 locations addressed from 0 to 1023, each location is one byte.
-The ID is 4 bytes long, and we have an extra byte to know whether this student has attended or not, so a total of 5 bytes for each student.
-We also have 5 bytes for a master card, 4 for master card ID and 1 extra byte to know whether is there a master card stored in the system or not.
-We also have 5 bytes for a doctor card, 4 for doctor card ID and 1 extra byte to know whether is there a doctor card stored in the system or not.
-We also have one last byte used to keep track of how many students are registered in the system.
-This leaves 1013 location, only 1010 are usable when divided by 5 this gives us locations for 202 students, which is not bad. 
-The general idea is all about location manipulation with simple equations, like for example the first student is stored in the location (5 + 5 + 1 – 1) which is (10), we subtracted (1) for the offset of counting from zero.
-Now to get the 3rd student, the equation is simple, 10 + (3 - 1) \* 5, which is 20.
-By knowing the total number of students it is easy to move across them to add or remove one of them.
-There exists two buttons for resetting the whole system’s data, or to only reset the master.
-The program will never continue without a valid master and doctor in the system.
+* The general idea is to store the IDs on the internal EEPROM with a sequence, while at the same time store the *master* card, in a different location, this master card will allow for adding/removing IDs.
+* The EEPROM consists of 1024 locations addressed from 0 to 1023, each location is one byte.
+* The ID is 4 bytes long, and we have an extra byte to know whether this student has attended or not, so a total of 5 bytes for each student.
+* We also have 5 bytes for a master card, 4 for master card ID and 1 extra byte to know whether is there a master card stored in the system or not.
+* We also have 5 bytes for a doctor card, 4 for doctor card ID and 1 extra byte to know whether is there a doctor card stored in the system or not.
+* We also have one last byte used to keep track of how many students are registered in the system.
+* This leaves 1013 locations, only 1010 are usable when divided by 5 this gives us locations for 202 students, which is not bad. 
+* The general idea is all about location manipulation with simple equations, like for example the first student is stored in the location (5 + 5 + 1 – 1) which is (10), we subtracted (1) for the offset of counting from zero.
+* Now to get the 3rd student, the equation is simple, 10 + (3 - 1) \* 5, which is 20.
+* By knowing the total number of students it is easy to move across them to add or remove one of them.
+* There exists two buttons for resetting the whole system’s data, or to only reset the master.
+* The program will never continue without a valid master and doctor in the system.
 
 ## Materials Required
 1. Arduino UNO
@@ -32,9 +32,9 @@ The program will never continue without a valid master and doctor in the system.
 6. Two pushbuttons
 
 ## Team Roles
-If I were a part of a team, I would discuss what sort of roles each teammate would play. For example, perhaps one of us is not particularly experienced at programming but really good at documentation -- it'd probably be a good idea to have that person work on the github documentation / writing the paper. Etc. etc.
-If I were a part of a team, maybe we could have researched into PCBs design and manufacturing so that we can order one for our project.
-If I were a part of a team, maybe we could have done the Wi-Fi integration part with an actual database hosted on the internet.
+* If I were a part of a team, I would discuss what sort of roles each teammate would play. For example, perhaps one of us is not particularly experienced at programming but really good at documentation -- it'd probably be a good idea to have that person work on the github documentation / writing the paper. Etc. etc.
+* If I were a part of a team, maybe we could have researched into PCBs design and manufacturing so that we can order one for our project.
+* If I were a part of a team, maybe we could have done the Wi-Fi integration part with an actual database hosted on the internet.
 
 ## Summary
 If this project turns out as proposed, it would be a huge contribution to the already made systems with SD-cards logging and RTCs, the only thing left would to be integrating both to a database, and voila we have an amazing system. 
