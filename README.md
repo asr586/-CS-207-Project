@@ -2,7 +2,7 @@
 
 
 ## Novel Contribution
-My contribution is adding the ability of adding/removing IDs in the run-time using a special card called master card, swiping this card allows for another menu on the LCD to show, the system automatically detects if the swept card is stored or not by searching for it in the internal EEPROM. There is another contribution that is a checker's card, which does not allow any attendance to be taken after his card is swiped, meaning no late attendance is allowed, I have also added the ability of removing the master's card and the ability of removing everything on the system.
+In this project, My contribution is adding the ability of adding/removing IDs in the run-time using a special card called master card, swiping this card allows for another menu on the LCD to show, the system automatically detects if the swept card is stored or not by searching for it in the internal EEPROM. There is another contribution that is a checker's card, which does not allow any attendance to be taken after his card is swiped, meaning no late attendance is allowed, I have also added the ability of removing the master's card and the ability of removing everything on the system.
 
 ## General idea
 * The general idea is to store the IDs on the internal EEPROM with a sequence, while at the same time store the *master* card, in a different location, this master card will allow for adding/removing IDs.
