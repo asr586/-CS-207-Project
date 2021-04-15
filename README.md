@@ -64,5 +64,5 @@ Video showing full project in motion:
 [![Explanation video](https://img.youtube.com/vi/PqkwWktK4Xg/0.jpg)](https://www.youtube.com/watch?v=PqkwWktK4Xg)
 
 ## Credits
-Project coding and building: Arshdeep
-
+* Project coding and building: Arshdeep S.
+* Original inspiration for this project: *team_chkr* on Arduino's Project Hub - https://create.arduino.cc/projecthub/team_chkr/rfid-based-smart-attendance-system-46b045
