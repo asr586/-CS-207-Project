@@ -40,7 +40,7 @@ And here is the Fritzing sketch with the components:
 
 ![Arduino sketch](https://github.com/asr586/CS-207-Project/blob/main/Images/arduino_sketch.png?raw=true)
 
-Due to a failing LCD module, I had to temporarily add a potentiometer and make some connections so that the program could work properly. After I got a new LCD, I could go back to the original Fritzing design. The Arduino code that I used for this temporary (non-final) design is available on this repo as "Images/Attendance_old"
+Due to a breaking of my LCD that i used with a potentiometer. I bought a new lcd and have to make some changes in my design and code. i attached both the design and code as if it helps you. The Arduino code that I used for this temporary (non-final) design is available on this repo as "Images/Attendance_old".
 
 ![Arduino sketch, temporary broken version](https://github.com/asr586/CS-207-Project/blob/main/Images/arduino_sketch2.png?raw=true)
 
