@@ -13,4 +13,3 @@ Final project, showing all components and their connections:
 
 Video showing full project in motion:
 [![Explanation video](https://img.youtube.com/vi/PqkwWktK4Xg/0.jpg)](https://www.youtube.com/watch?v=PqkwWktK4Xg)
-
